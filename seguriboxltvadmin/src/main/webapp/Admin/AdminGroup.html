@@ -1,0 +1,90 @@
+
+<ui:composition  template = "../../templates/MasterTemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://xmlns.jcp.org/jsf/passthrough"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+
+
+        <body>
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top:94px">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h3><strong>Agregar grupo</strong></h3>
+                                    Información del grupo
+                                </div>
+                                <div class="panel-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="text">Nombre:</label>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" id="usr" placeholder="Nombre de grupo">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="comment">Descripción:</label>
+                                            <div class="col-md-8">
+                                                <textarea class="form-control" rows="3" id="comment" placeholder="Descripción breve del grupo"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="text">Área:</label>
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option>Sistemas</option>
+                                                    <option>Dirección</option>
+                                                    <option>Finanzas</option>
+                                                    <option>Recepción</option>
+                                                    <option>Ventas</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="text">Tipo de grupo:</label>
+                                            <div class="col-md-4">
+                                                <select class="form-control" id="typeUser">
+                                                    <option value="user">Usuario</option>
+                                                    <option value="admin">Administrador</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <a href="AdminGroups.html" type="button" class="btn btn-primary">Cancelar</a>
+                                                <a data-toggle="modal" data-target="#myModal" type="button" class="btn btn-primary">Guardar</a>
+                                                <button id="btn-typeGroup" type="button" class="btn btn-primary">Siguiente</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header  text-center">
+                                <h4 class="modal-title" id="myModalLabel">É X I T O</h4>
+                            </div>
+                            <div class="modal-body">
+                                El grupo se creó exitosamente!
+                            </div>
+                            <div class="modal-footer">
+                                <a type="button" class="btn btn-primary" href="AdminGroups.html">Aceptar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </ui:define> 
+</ui:composition>

@@ -46,6 +46,6 @@
     </listener>
     <error-page>
         <error-code>404</error-code>
-        <location>/errorPages/error404.xhtml</location>
+        <location>/utils/http404.xhtml</location>
     </error-page>
 </web-app>

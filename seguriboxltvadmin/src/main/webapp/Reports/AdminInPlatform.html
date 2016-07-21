@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SeguriBox LTV</title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../../css/animate.css">
+        <link rel="stylesheet" href="../../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../css/jquery-ui.min.css">
+        <link rel="stylesheet" href="../../css/style.css">
+        <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../js/App.js"></script>
+        <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <a href="../Default.html" target="_top"><img class="logo" src="../../img/LogoMBN.png" alt="logo"></a>
+            <div class="slogan"><i>La Información es Poder.   Knowledge is power.</i></div>
+        </div>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Gestión de Documentos <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../Admin/AdminDocuments.html"><span class="glyphicon glyphicon-duplicate"></span> Administración de Documentos</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reportes <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="UsersInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Usuarios</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="AdminInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Administradores</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="DocsInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documentos</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="DocsInStandar.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documento por Estándar de firma</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="SignaturesByDoc.html"><span class="glyphicon glyphicon-stats"></span> Reporte Firmas por documento</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="DocsToExpire.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documentos por vencer</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="CertToExpire.html"><span class="glyphicon glyphicon-stats"></span> Reporte Certificados por vencer</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Monitoreo <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../Monitoring/UserLog.html"><span class="glyphicon glyphicon-record"></span> Log de acceso al portal</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Monitoring/AuditTrial.html"><span class="glyphicon glyphicon-record"></span> Log de auditoria</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Herramientas <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu">
+                                        <a><span class="glyphicon glyphicon-home"></span> Seguridad</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="../Admin/AdminAreas.html"><span class="glyphicon glyphicon-th-list"></span> Areas de trabajo</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AdminGroups.html"><span class="glyphicon glyphicon-th"></span> Grupos</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AdminUsers.html"><span class="glyphicon glyphicon-user"></span> Usuarios</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AdminProfileProcesses.html"><span class="glyphicon glyphicon-list-alt"></span> Perfil de procesos</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AdminHSMKeys.html"><span class="glyphicon glyphicon-wrench"></span> Llaves HSM</a></li>
+                                        </ul>
+                                    </li>                                    
+                                    <li class="divider"></li>
+                                    <li class="dropdown dropdown-submenu">
+                                        <a><span class="glyphicon glyphicon-lock"></span> Politicas algoritmos</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="../Admin/AdminAsimetricAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Asimétrico</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AdminHashAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Hash</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AdminAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Firma</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AdminLibraryAlgorithms.html"><span class="glyphicon glyphicon-book"></span> Cargar librería</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="../Admin/AlgorithmsHistory.html"><span class="glyphicon glyphicon-record"></span> Historial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="../SystemSettings.html"><span class="glyphicon glyphicon-cog"></span> Configuración del Sistema</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="dropdown pull-right">
+                            <button class="glyphicon glyphicon-user btn dropdown-toggle " style="background-color:#eeeef2;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                German Hernandez Lopez
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                                <li><a href="##" class=""> &nbsp; Usuario: ghernandez &nbsp; </a></li>
+                                <li><a href="##">&nbsp; Nombre: German Hernandez Lopez</a></li>
+                                <li><a href="../SignInk.html"> <span class="glyphicon glyphicon-off">&nbsp;Salir</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="mainContent">
+            <div class="container-fluid " style="margin-top:30px">
+                <div class="row">
+                    <div class="col-md-12 visible-md visible-lg visible-sm">
+                        <div class="pull-right">
+                            <a href="Reporte.xlsx" class="btn btn-primary" download="Reporte.xlsx">Descargar</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 visible-xs">
+                        <div class="pull-right">
+                            <a href="Reporte.xlsx" class="btn btn-primary" download="Reporte.xlsx">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="margin-top:30px">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h3><strong>Reporte de administradores en plataforma</strong></h3>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Fecha inicial" id="datepicker">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Fecha final" name="" id="datepicker2">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Nombre de usuario" name="">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th><span class="glyphicon glyphicon-sort"></span> Nombre</th>
+                                                <th><span class="glyphicon glyphicon-sort"></span> Area</th>
+                                                <th>Correo electrónico</th>
+                                                <th>Tipo de inicio</th>
+                                                <th><span class="glyphicon glyphicon-sort"></span> Fecha vencimiento</th>
+                                                <th>N° de serie</th>
+                                                <th>Descargar certificado</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>005</td>
+                                                <td>German Hernandez Lopez</td>
+                                                <td>Sistemas</td>
+                                                <td>hgerman@mbn.com.mx</td>
+                                                <td>Certificado</td>
+                                                <td>2017-01-02</td>
+                                                <td>40ff0c88</td>
+                                                <td><a class="glyphicon glyphicon-save center-block" href="certificado.cer" download="German.cer"></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>012</td>
+                                                <td>Araceli Cortes Castillo</td>
+                                                <td>Sistemas</td>
+                                                <td>caraceli@mbn.com.mx</td>
+                                                <td>Certificado</td>
+                                                <td>2017-01-09</td>
+                                                <td>3fda9858</td>
+                                                <td><a class="glyphicon glyphicon-save center-block" href="certificado.cer" download="Araceli.cer"></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>025</td>
+                                                <td>Eduardo Nabor Lima</td>
+                                                <td>Sistemas</td>
+                                                <td>neduardo@mbn.com.mx</td>
+                                                <td>Certificado</td>
+                                                <td>2017-01-13</td>
+                                                <td>40246d15</td>
+                                                <td><a class="glyphicon glyphicon-save center-block" href="certificado.cer" download="Eduardo.cer"></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </body>
+</html>

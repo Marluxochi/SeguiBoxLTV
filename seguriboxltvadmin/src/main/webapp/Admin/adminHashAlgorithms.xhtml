@@ -1,0 +1,59 @@
+<ui:composition  template = "../templates/mastertemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://xmlns.jcp.org/jsf/passthrough"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+        <h:body>
+
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top: 94px;">
+                    <div class="row">
+                        <div class="col-md-2" />
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h3><strong>Políticas algoritmos hash</strong></h3>
+                                    <br />
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <h:form>
+                                            <b:messages/>
+                                            
+                                            <b:dataTable value="#{algorithmHashBean.hashes}" var="item" responsive="true" lang="es" fixedHeader="true" scroll-size="400px">
+
+                                                <b:dataTableColumn label="Nombre algoritmo">#{item.algorithmName}</b:dataTableColumn>
+                                                <b:dataTableColumn label="OID">#{item.oid}</b:dataTableColumn>
+                                                <b:dataTableColumn order="asc" label="Estatus">#{item.isActiveStr}</b:dataTableColumn>
+                                                <b:dataTableColumn label="Fecha  registro">#{item.dateReference}</b:dataTableColumn>
+                                                <b:dataTableColumn label="Fecha  anulación">#{item.expirationDate}</b:dataTableColumn>
+                                                <b:dataTableColumn label="Tamaño">#{item.bytes}</b:dataTableColumn>
+                                                <h:column >
+                                                    <f:facet name="header">
+                                                        <h:outputText value="Editar"></h:outputText>
+                                                    </f:facet>
+                                                    <b:commandButton  value=""  style="padding: 0; border: none; background: none;color: #000" styleClass="center-block" action="#{algorithmHashBean.goToEdit(item)}">
+                                                        <b:iconAwesome name="edit" styleClass="text-primary"></b:iconAwesome>
+
+                                                    </b:commandButton>
+                                                </h:column>
+
+                                            </b:dataTable>
+                                        </h:form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2" />   
+                    </div>
+                </div>
+            </div>
+
+
+        </h:body>
+    </ui:define> 
+</ui:composition>
