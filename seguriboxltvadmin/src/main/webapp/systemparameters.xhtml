@@ -1,0 +1,53 @@
+
+<ui:composition  template = "templates/mastertemplate2.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://xmlns.jcp.org/jsf/passthrough"> 
+    <ui:define  name = "title" > hello </ui:define> 
+    <ui:define  name = "content" > 
+
+        <body>
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top:130px">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 ">
+                            <b:messages />
+                            <panel title="System Parameter" look="default" collapsible="false">
+                            
+                                <h:form>
+                                    <div class="form-group">
+                                        <label for="user">Nombre parametro:</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-user"></i>
+                                            </span>
+                                            <h:inputText p:placeholder="Nombre " id="nombre" styleClass="form-control"  value="#{systemParameterBean.systemP.parameterName}"/>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="user">Valor Parametro</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-lock"></i>
+                                            </span>
+                                            <h:inputText p:placeholder="Valor" id="valor" styleClass="form-control" value="#{systemParameterBean.systemP.parameterValue}"/>
+                                        </div>
+                                    </div>
+                                    <div>                               
+                                        <h:commandButton   value="Continuar"  styleClass="btn btn-primary center-block"  action="#{systemParameterBean.save()}"/>
+                                    </div>
+                                </h:form>
+                            </panel>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </body>
+
+    </ui:define> 
+</ui:composition>

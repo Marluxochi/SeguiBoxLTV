@@ -1,0 +1,52 @@
+<ui:composition  template = "../../templates/mastertemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://primefaces.org/ui"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+        <h:body>
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top:94px">
+                    <div class="row">
+                        <div class="col-md-1"/>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-2">
+                                        <h:selectOneMenu class="form-control" value="">
+                                            <f:selectItem itemValue="1" itemLabel="Asimetric" />
+                                            <f:selectItem itemValue="2" itemLabel="Hash" />	   							
+                                            <f:selectItem itemValue="3" itemLabel="Sign" />	   							
+                                        </h:selectOneMenu>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="panel">
+                                        <div class=" text-center"><h3><strong>Activar Librería</strong></h3></div>
+                                        <div class="panel-body">
+                                            Contenido de la tabla
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class="panel-heading text-center"><h3><strong>Panel</strong></h3></div>
+                                        <div class="panel-body">
+                                            Contenido 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"/>
+                    </div>
+                </div>
+            </div>
+        </h:body>   
+    </ui:define> 
+</ui:composition>

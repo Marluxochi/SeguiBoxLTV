@@ -1,0 +1,80 @@
+<ui:composition  template = "../../templates/mastertemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+
+                 xmlns:p="http://primefaces.org/ui"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+        <h:body>
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top: 94px;">
+                    <div class="row">
+                        <div class="col-md-2" />
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h3><strong>Agregar grupo</strong></h3>
+                                    <h4>Selección de llaves</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <h:form styleClass="form-horizontal">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Buscar llaves" id="txt-hsm" />
+                                                    <div class="input-group-btn">
+                                                        <button class="btn btn-default" type="button" id="btn-addToList"><i class="glyphicon glyphicon-search" /></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" />
+                                        </div>
+                                        <div class="row">
+                                            <br/>
+                                            <div class="col-md-8">
+                                                #{hsmKeyBean.hsmKey.keyTag}
+                                                <p:pickList id="pickList" value="#{hsmKeyBean.hsmkeys}" var="item" itemLabel="#{item.keyTag}" itemValue="#{item.keyTag}"/>
+
+                                           </div>
+                                        </div>
+
+                                        <div class="btn-group pull-right">
+                                            <h:commandButton value="Atrás" class="btn btn-primary"></h:commandButton>
+                                            <h:commandButton value="Finalizar" class="btn btn-primary"></h:commandButton>
+
+                                        </div>
+                                    </h:form>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container-fluid" style="margin-top: 30px;">
+                    <div class="row">
+                        <!-- Button trigger modal -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header  text-center">
+                                        <h4 class="modal-title" id="myModalLabel">É X I T O</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        El grupo se creó exitosamente!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a type="button" class="btn btn-primary" href="AdminGroups.xhtml">Aceptar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </h:body>
+    </ui:define> 
+</ui:composition>
