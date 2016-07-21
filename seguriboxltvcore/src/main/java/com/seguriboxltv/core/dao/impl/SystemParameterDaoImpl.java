@@ -58,7 +58,7 @@ public class SystemParameterDaoImpl implements SystemParameterDao {
         sql = "{call SystemSetParameter(?,?,?,?,?)}";
 
         try {
-            conn=dataSource.getConnection();
+            conn = dataSource.getConnection();
             cStmt = conn.prepareCall(sql);
             cStmt.setString("ParameterName", systemParameter.getParameterName());
             cStmt.setString("ParameterValue", systemParameter.getParameterValue());
@@ -66,13 +66,15 @@ public class SystemParameterDaoImpl implements SystemParameterDao {
             cStmt.setString("UserName", userName);
             cStmt.setString("HostName", hostName);
             boolean execute = cStmt.execute();
-
-            if (execute == true) {
-
-                System.out.println("La consulta se ejecuto correctamente");
-            } else {
-
-                throw new Exception("Hubo errores al ejecutar el Store Procedure");
+            if (execute) {
+                rsl = cStmt.getResultSet();
+                if (rsl.next()) {
+                    returnCode = rsl.getInt("ReturnCode");
+                    returnMessage = rsl.getString("ReturnMessage");
+                }
+                if (returnCode > 0) {
+                    throw new Exception(returnMessage);
+                }
             }
         } catch (SQLException e) {
 

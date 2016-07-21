@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /seguriboxltvcore/target/
 /SeguriboxLTVWebServices/target/
 /seguriboxltvadmin/target/
+=======
+/seguriboxltvadmin/target/
+/seguriboxltvcore/target/
+/SeguriboxLTVWebServices/target/
+>>>>>>> origin/development

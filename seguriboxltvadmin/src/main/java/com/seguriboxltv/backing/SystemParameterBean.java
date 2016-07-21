@@ -41,12 +41,12 @@ public class SystemParameterBean {
     
     
     
-    public void save(){
+    public void save(){                
         
         
         
         try {
-            systemPServ.Set(systemP, GetIp(), "gerhl92");
+            systemPServ.Set(systemP,  "gerhl92",GetIp());
         } catch (Exception e) {
             e.printStackTrace();
         }
