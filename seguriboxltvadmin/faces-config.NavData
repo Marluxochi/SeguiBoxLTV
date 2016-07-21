@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="seguriboxadmin/Admin/layout-admin-adminFolder.html" x="900" y="450" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminUser.html" x="400" y="450" zoom="true"/>
+        <Node id="seguriboxadmin/signin.xhtml" x="650" y="1200" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/EditHSMKey.html" x="1900" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminHashAlgorithms.html" x="1150" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminAlgorithms.html" x="650" y="600" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminGroupEdit.html" x="1650" y="450" zoom="true"/>
+        <Node id="seguriboxadmin/Monitoring/UserLog.html" x="150" y="1350" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminHSMKey.html" x="1150" y="450" zoom="true"/>
+        <Node id="seguriboxadmin/Monitoring/layout-admin-motiforingFolder.html" x="150" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminHSMKeys.html" x="900" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/CertToExpire.html" x="2400" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminGroup.html" x="650" y="900" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminGroupPermissions.html" x="900" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/SignaturesByDoc.html" x="400" y="1350" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminHSMKeysHashAlgorithms.html" x="650" y="1050" zoom="true"/>
+        <Node id="ejemploMaster.xhtml" x="150" y="900" zoom="true"/>
+        <Node id="index.xhtml" x="900" y="600" zoom="true"/>
+        <Node id="templates/Footer.xhtml" x="1900" y="450" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AlgorithmsHistory.html" x="1400" y="450" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminProfileProcessHSMKey.html" x="900" y="750" zoom="true"/>
+        <Node id="seguriboxadmin/Default.html" x="2150" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminProfileProcess.html" x="150" y="450" zoom="true"/>
+        <Node id="templates/Header.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminGroups.html" x="1400" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/EditHSMKeysHashAlgorithms.html" x="1400" y="600" zoom="true"/>
+        <Node id="seguriboxadmin/banner.html" x="1150" y="750" zoom="true"/>
+        <Node id="seguriboxadmin/Monitoring/AuditTrial.html" x="150" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminUserAccess.html" x="150" y="1050" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminAlgorithm.html" x="400" y="900" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/EditProfileProcessHSMKey.html" x="150" y="1500" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/DocsToExpire.html" x="1650" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminAreas.html" x="1400" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminGroupHSMKey.html" x="900" y="900" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminLibraryAlgorithms.html" x="1150" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminDocumentPermissions.html" x="400" y="1050" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/EditProfilePermissions.html" x="650" y="450" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminAsimetricAlgorithms.html" x="1150" y="900" zoom="true"/>
+        <Node id="seguriboxadmin/layout-admin-indexFolder.html" x="400" y="1200" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminUsers.html" x="650" y="750" zoom="true"/>
+        <Node id="seguriboxadmin/SignInk.html" x="150" y="750" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminArea.xhtml" x="1900" y="600" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/DocsInPlatform.html" x="150" y="600" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminDocuments.html" x="2150" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/SystemSettings.html" x="2400" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/AdminInPlatform.html" x="1400" y="750" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/layout-admin-reportFolder.html" x="400" y="300" zoom="true"/>
+        <Node id="templates/mastertemplate2.xhtml" x="2150" y="450" zoom="true"/>
+        <Node id="templates/headerwm.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminGroupUsers.html" x="1900" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/UsersInPlatform.html" x="650" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminHashAlgorithm.html" x="1150" y="600" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminProfileProcesses.html" x="1650" y="300" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminAsimetricAlgorithm.html" x="900" y="1050" zoom="true"/>
+        <Node id="templates/mastertemplate.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/AdminProfilePermissions.html" x="1650" y="600" zoom="true"/>
+        <Node id="seguriboxadmin/Reports/DocsInStandar.html" x="150" y="1200" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/adminArea.html" x="2650" y="150" zoom="true"/>
+        <Node id="seguriboxadmin/Admin/EditProfileProcess.html" x="400" y="750" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

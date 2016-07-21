@@ -1,0 +1,164 @@
+<ui:composition  template = "../../templates/MasterTemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://xmlns.jcp.org/jsf/passthrough"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+        <body>
+
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top:74px">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8 ">
+                            <b:panel class="text-center" title="Agregar Usuario" look="default" collapsible="false">
+                                <h:form>
+                                    <div class="container">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="panel col-md-6">
+                                            <b:messages/>
+                                            <div class="panel-body">
+                                                <b:message for="user"/>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*Usuario</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText id="user" p:placeholder="Usuario"  styleClass="form-control" value="#{userBean.user.username}"/>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*Nombre:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="Nombre"  styleClass="form-control" value="#{userBean.user.firstName}"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*Ap. paterno:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="Apellido paterno"  styleClass="form-control" value="#{userBean.user.middleName}"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*Ap. materno:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="Apellido materno"  styleClass="form-control" value="#{userBean.user.lastName}"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*Email:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="Correo Electrónico"  styleClass="form-control" value="#{userBean.user.email}"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*Teléfono:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="10 dígitos"  styleClass="form-control" value="#{userBean.user.telNumber}" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*RFC:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="Homoclave"  styleClass="form-control" value="#{userBean.user.rfc}"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">*CURP:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="CURP"  styleClass="form-control" value="#{userBean.user.curp}"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-5" for="text">Puesto:</label>
+                                                    <div class="col-md-7">
+                                                        <h:inputText p:placeholder="Ing/Lic"  styleClass="form-control" value="#{userBean.user.puesto}"/>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="form-group">
+                                        <div class="panel col-md-6">
+                                            <div class="panel-body">
+                                                <div class="form-horizontal">
+
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">Identificador:</label>
+                                                        <div class="col-md-7">
+                                                            <h:inputText p:placeholder="Identificador interno"  styleClass="form-control" value="#{userBean.user.identificador}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">*Calle</label>
+                                                        <div class="col-md-7">
+                                                            <h:inputText p:placeholder="Calle"  styleClass="form-control" value="#{userBean.user.calle}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">*Número</label>
+                                                        <div class="col-md-7">
+                                                            <h:inputText p:placeholder="Número"  styleClass="form-control" value="#{userBean.user.numero}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">*Código postal</label>
+                                                        <div class="col-md-7">
+                                                            <h:inputText p:placeholder="CP"  styleClass="form-control" value="#{userBean.user.codigoPostal}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">*Municipio</label>
+                                                        <div class="col-md-7">
+                                                            <h:inputText p:placeholder="Municipio"  styleClass="form-control" value="#{userBean.user.municipio}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">*Colonia</label>
+                                                        <div class="col-md-7">
+                                                            <h:inputText p:placeholder="Colonia"  styleClass="form-control" value="#{userBean.user.colonia}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">*Estado</label>
+                                                        <div class="col-md-7">
+                                                            <h:inputText p:placeholder="Estado"  styleClass="form-control" value="#{userBean.user.estado}"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-5" for="text">*País:</label>
+                                                        <div class="col-md-7">
+                                                            <h:selectOneMenu styleClass="form-control" value="#{userBean.user.countryCode}">
+                                                                <f:selectItem itemLabel="México" itemValue="mx" />
+                                                            </h:selectOneMenu>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <b:buttonGroup>
+                                                <b:button value="Cancelar" look="danger" outcome="adminGroups"/>
+                                                <b:commandButton value="Guardar" look="primary" action="#{groupBean.save()}" update="@form"/>
+                                                <b:commandButton value="Siguiente" look="primary"/>
+                                            </b:buttonGroup>
+                                        </div>
+                                    </div>
+                                </h:form>
+                            </b:panel>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </body>
+    </ui:define> 
+</ui:composition>

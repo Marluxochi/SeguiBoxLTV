@@ -1,0 +1,199 @@
+/*! * Layana HTML 1.0.0 by WowThemes.net * All rights reserved http://www.wowthemes.net */
+html,body {
+    width:100%;
+    height:100%;
+}
+
+
+body {
+    font-family:Open Sans,'Helvetica Neue',Arial,sans-serif;
+    font-size:15px;
+    color:#777;
+    line-height:1.7;
+}
+
+.margin-top{
+
+    margin-top:10px;
+}
+
+.nav .navbar-left{
+
+    padding-right:50px !important;
+}
+input[type=file] { width: 450px; border: 2px solid red; }
+
+
+.fixed-panel {
+    min-height:100px;
+    max-height:300px;
+    overflow-y: scroll;
+}
+
+.whitout-margin{
+
+    margin:0 !important;
+}
+
+.whitout-padding{
+
+    padding:0 !important;
+}
+
+
+.b-white-color{
+
+    background-color:white !important;
+}
+
+
+.navbar-default {
+    border-color:rgba(34,34,34,.05);
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color:#fff;
+    -webkit-transition:all .35s;
+    -moz-transition:all .35s;
+    transition:all .35s;
+}
+.navbar-default .navbar-header .navbar-brand {
+    text-transform:uppercase;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight:700;
+    color:#f05f40;
+}
+.navbar-default .navbar-header .navbar-brand:hover,.navbar-default .navbar-header .navbar-brand:focus {
+    color:#eb3812;
+}
+.navbar-default .nav>li>a,.navbar-default .nav>li>a:focus {
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:600;
+    font-family:Dosis;
+    color:#222;
+    letter-spacing:0.8px;
+}
+.navbar-default .nav>li>a:hover,.navbar-default .nav>li>a:focus:hover {
+    color:#f05f40 !important;
+}
+.navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus {
+    color:#f05f40!important;
+    background-color:transparent;
+}
+.navbar-default .nav>li.active>a:hover,.navbar-default .nav>li.active>a:focus:hover {
+    background-color:transparent;
+}
+
+
+@media(min-width:768px) {
+    .navbar-default {
+        border:0;
+        background-color:rgba(255,255,255,0.98);
+        box-shadow:0 1px 0px rgba(0,0,0,0.03);
+    }
+    .navbar-default .navbar-header .navbar-brand:hover,.navbar-default .navbar-header .navbar-brand:focus {
+        color:#333;
+    }
+    .navbar-default .nav>li>a,.navbar-default .nav>li>a:focus {
+        color:#333;
+    }
+    .navbar-default .nav>li>a:hover,.navbar-default .nav>li>a:focus:hover {
+        color:#333;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand {
+        color:#f05f40;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand:hover,.navbar-default.affix .navbar-header .navbar-brand:focus {
+        color:#eb3812;
+    }
+    .navbar-default.affix .nav>li>a,.navbar-default.affix .nav>li>a:focus {
+        color:#222;
+    }
+    .navbar-default.affix .nav>li>a:hover,.navbar-default.affix .nav>li>a:focus:hover {
+        color:#f05f40;
+    }
+}
+
+
+
+/* Hasta aqui se comenta */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.text2-center {
+    margin-right:25%;
+}
+
+.p100 {
+    width:100%;
+    height:100% !important;
+}
+
+.panelHeight {
+    height:750px !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* Pruebas */
+.inverted {
+    filter: invert(90%);
+}
+
+.inverted img {
+    filter: invert(0%);
+}
+
+nav.navbar {
+    color: #000 !important;
+}

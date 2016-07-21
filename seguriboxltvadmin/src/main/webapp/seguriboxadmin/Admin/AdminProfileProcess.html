@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SeguriBox LTV</title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../../css/animate.css">
+        <link rel="stylesheet" href="../../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../css/style.css">
+        <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <a href="../Default.html" target="_top"><img class="logo" src="../../img/LogoMBN.png" alt="logo"></a>
+            <div class="slogan"><i>La Información es Poder.   Knowledge is power.</i></div>
+        </div>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Gestión de Documentos <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AdminDocuments.html"><span class="glyphicon glyphicon-duplicate"></span> Administración de Documentos</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reportes <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../Reports/UsersInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Usuarios</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/AdminInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Administradores</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/DocsInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documentos</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/DocsInStandar.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documento por Estándar de firma</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/SignaturesByDoc.html"><span class="glyphicon glyphicon-stats"></span> Reporte Firmas por documento</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/DocsToExpire.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documentos por vencer</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/CertToExpire.html"><span class="glyphicon glyphicon-stats"></span> Reporte Certificados por vencer</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Monitoreo <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../Monitoring/UserLog.html"><span class="glyphicon glyphicon-record"></span> Log de acceso al portal</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Monitoring/AuditTrial.html"><span class="glyphicon glyphicon-record"></span> Log de auditoria</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Herramientas <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu">
+                                        <a><span class="glyphicon glyphicon-home"></span> Seguridad</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminAreas.html"><span class="glyphicon glyphicon-th-list"></span> Areas de trabajo</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminGroups.html"><span class="glyphicon glyphicon-th"></span> Grupos</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminUsers.html"><span class="glyphicon glyphicon-user"></span> Usuarios</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminProfileProcesses.html"><span class="glyphicon glyphicon-list-alt"></span> Perfil de procesos</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminHSMKeys.html"><span class="glyphicon glyphicon-wrench"></span> Llaves HSM</a></li>
+                                        </ul>
+                                    </li>                                    
+                                    <li class="divider"></li>
+                                    <li class="dropdown dropdown-submenu">
+                                        <a><span class="glyphicon glyphicon-lock"></span> Politicas algoritmos</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminAsimetricAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Asimétrico</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminHashAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Hash</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Firma</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminLibraryAlgorithms.html"><span class="glyphicon glyphicon-book"></span> Cargar librería</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AlgorithmsHistory.html"><span class="glyphicon glyphicon-record"></span> Historial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="../SystemSettings.html"><span class="glyphicon glyphicon-cog"></span> Configuración del Sistema</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="dropdown pull-right">
+                            <button class="glyphicon glyphicon-user btn dropdown-toggle " style="background-color:#eeeef2;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                German Hernandez Lopez
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                                <li><a href="##" class=""> &nbsp; Usuario: ghernandez &nbsp; </a></li>
+                                <li><a href="##">&nbsp; Nombre: German Hernandez Lopez</a></li>
+                                <li><a href="../SignInk.html"> <span class="glyphicon glyphicon-off">&nbsp;Salir</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="mainContent">
+            <div class="container-fluid" style="margin-top:94px">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h3><strong>Agregar perfil de proceso</strong></h3>
+                                <h4>Características principales</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-5" for="text">Nombre:</label>
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control" id="usr" placeholder="Nombre del perfil">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-5" for="text">Tipo de conversión:</label>
+                                        <!-- ojo Validación: Si el documento requiere de conversión PDF/A, no se debe mostrar la opción de Tipo de firma previa. -->
+                                        <div class="col-md-5">
+                                            <select class="form-control">
+                                                <option>Convertir a PDF/A</option>
+                                                <option>No convertir</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-5" for="text">Tipo de firma a aplicar:</label>
+                                        <div class="col-md-5">
+                                            <select class="form-control">
+                                                <option>PDF</option>
+                                                <option>CMS</option>
+                                                <option>XMLSig</option>
+                                                <option>Ninguna</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-5" for="text">Periodo de almacenamiento:</label>
+                                        <div class="col-md-5">
+                                            <input type="number" class="form-control" placeholder="Meses" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-5" for="text">Tipo de firma previa:</label>
+                                        <div class="col-md-5">
+                                            <select class="form-control">
+                                                <option>PDF</option>
+                                                <option>CMS</option>
+                                                <option>XMLSignature</option>
+                                                <option>Ninguna</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group pull-right">
+                                        <button onclick="location.href = 'AdminProfileProcesses.html'"  type="button" class="btn btn-primary">Cancelar</button>
+                                        <button onclick="location.href = 'AdminProfileProcessHSMKey.html'"  type="button" class="btn btn-primary">Siguiente</button>
+                                    </div>
+                                </form>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <footer></footer>
+    </body>
+</html>

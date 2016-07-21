@@ -1,0 +1,14 @@
+<ui:composition  template = "templates/masterTemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets"  > 
+    <ui:define  name = "title" > hello </ui:define> 
+    <ui:define  name = "content" > 
+        Esta página implementa el template                
+        <h:form>
+            <p>Welcome #{userBean.usuario.username}</p>
+            <h:commandLink action="#{userBean.logout}" value="Logout"></h:commandLink>
+        </h:form>
+    </ui:define> 
+</ui:composition>

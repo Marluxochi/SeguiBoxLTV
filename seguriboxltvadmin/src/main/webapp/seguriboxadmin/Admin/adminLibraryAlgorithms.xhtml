@@ -1,0 +1,34 @@
+<ui:composition  template = "../../templates/MasterTemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://xmlns.jcp.org/jsf/passthrough"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+
+        <h:body>
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top: 94px;">
+                    <div class="row">
+                        <div class="col-md-3" />
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h3><strong>Cargar librería de algoritmos</strong></h3></div>
+                                <div class="panel-body">
+                                    <label>Ultima versión: 1.2.0</label>
+                                    <input type="file" class="form-control" id="usr" style="width: 380px; border: none;" />
+                                    <br />
+                                    <h:commandButton value="Cargar DLL" class="btn btn-primary btn-group pull-right"></h:commandButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </h:body>
+    </ui:define> 
+</ui:composition>
+

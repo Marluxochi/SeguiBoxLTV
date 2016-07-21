@@ -1,0 +1,57 @@
+
+<ui:composition  template = "../../templates/mastertemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+
+                 xmlns:p="http://primefaces.org/ui"  > 
+    <ui:define  name = "title" > Seguribox </ui:define> 
+
+    <ui:define  name = "content" > 
+
+        <body>
+
+
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top:130px">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 ">
+                            <h:form>
+                                
+                                <p:growl id="growl" showDetail="true" sticky="false" life="5000" />  
+                                
+                                <b:messages/> 
+                                <b:panel title="#{areaBean.labelMessage} área" look="default" collapsible="false">
+
+                                    
+                                    <div class="form-group">
+                                        <b:message for="area"/>
+                                        <label for="user">*Nombre:</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-pencil"></i>
+                                            </span>
+                                            
+                                            <h:inputText p:placeholder="Nombre del área" id="area" styleClass="form-control" value="#{areaBean.area.areaName}" required="true" requiredMessage="El campo nombre es requerido"/>
+                                        </div>
+                                    </div>
+                                    <b:message for="activo"/>
+                                    <h:selectBooleanCheckbox id="activo" value="#{areaBean.area.isActive}" converter="javax.faces.Boolean"/>Activo
+                                    <div>
+
+                                        <b:commandButton   value="Guardar" look="primary"  style-class="center-block" action="#{areaBean.create()}" update="@form" />
+                                    </div>
+
+                                </b:panel>
+                            </h:form>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </body>
+
+    </ui:define> 
+</ui:composition>

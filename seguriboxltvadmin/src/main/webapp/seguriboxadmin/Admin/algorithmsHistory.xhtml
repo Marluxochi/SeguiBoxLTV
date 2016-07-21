@@ -1,0 +1,100 @@
+<ui:composition  template = "../../templates/MasterTemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://xmlns.jcp.org/jsf/passthrough"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+
+        <h:body>
+          <div id="mainContent">
+            <div class="container-fluid" style="margin-top:94px">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h3><strong>Historial de algoritmos</strong></h3>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Fecha inicial" name="" id="datepicker2"/>
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Fecha final" name="" id="datepicker"/>
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Nombre de usuario"/>
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Fecha y hora (UTC)</th>
+                                                <th>ID</th>
+                                                <th>Nombre</th>
+                                                <th>Host</th>
+                                                <th>Movimiento</th>
+                                                <th>Detalles</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2016-04-29T14:23:52</td>
+                                                <td>005</td>
+                                                <td>German Hernandez Lopez</td>
+                                                <td>German PC</td>
+                                                <td>Cambio de descripción</td>
+                                                <td>Se realiza cambio en <strong>RSA v1.5</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-05-27T12:07:02</td>
+                                                <td>005</td>
+                                                <td>German Hernandez Lopez</td>
+                                                <td>German PC</td>
+                                                <td>Desactivar algoritmo</td>
+                                                <td>Se desactiva algoritmo<strong>MD5</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+                
+                
+                
+        </h:body>
+    </ui:define> 
+</ui:composition>

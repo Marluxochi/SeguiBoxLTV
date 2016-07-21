@@ -1,0 +1,80 @@
+<ui:composition  template = "../../templates/mastertemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://primefaces.org/ui"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+        <h:body>
+            <div id="mainContent">
+                <div class="container-fluid " style="margin-top: 30px;">
+                    <div class="row">
+                        <div class="col-md-12 visible-md visible-lg visible-sm">
+                            <div class="pull-right">
+                                <button onclick="location.href = 'AdminArea.jsf'" type="button" class="btn btn-primary">Agregar área</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 visible-xs">
+                            <div class="pull-right">
+
+                                <button onclick="location.href = 'AdminArea.jsf'" type="button" class="btn btn-primary">Agregar área</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" style="margin-top: 30px;">
+                    <div class="row">
+                        <div class="col-md-2" />
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h3><strong>Areas de trabajo</strong></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <h:form>
+                                            <b:messages/>
+                                            <b:dataTable value="#{areaBean.areas}" var="item" responsive="true" lang="es" fixedHeader="true" scroll-size="400px">
+                                                <b:dataTableColumn label="ID Area">#{item.areaId}</b:dataTableColumn>
+                                                <b:dataTableColumn label="Nombre del Area">#{item.areaName}</b:dataTableColumn>
+                                                <b:dataTableColumn order="asc" label="Estatus">#{item.isActive}</b:dataTableColumn>
+                                                <h:column >
+                                                    <f:facet name="header">
+                                                        <h:outputText value="Editar"></h:outputText>
+                                                    </f:facet>
+                                                    <b:commandButton  value="" action="#{areaBean.goToArea(item)}" style="padding: 0; border: none; background: none;color: #000" styleClass="center-block">
+                                                        <b:iconAwesome name="edit" styleClass="text-primary"></b:iconAwesome>
+
+                                                    </b:commandButton>
+                                                </h:column>
+                                                <h:column >
+                                                    <f:facet name="header">
+                                                        <h:outputText value="Eliminar"></h:outputText>
+                                                    </f:facet>
+                                                    <p:commandButton value=""  actionListener="#{areaBean.delete(item)}" style="padding: 0; border: none; background: none;color: #000" styleClass="center-block text-primary glyphicon glyphicon-zoom-in" update="@form">
+
+                                                        <p:confirm header="Confirmación" message="Estas Seguro que quieres eliminar #{item.areaName}?" icon="ui-icon-alert" />
+                                                    </p:commandButton>
+                                                </h:column>
+                                            </b:dataTable>
+
+                                            <p:growl id="message" showDetail="true" />
+
+                                            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                                                <p:commandButton value="Si" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                                                <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+                                            </p:confirmDialog>
+                                        </h:form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2" />   
+                    </div>
+                </div>
+            </div>
+        </h:body>
+    </ui:define> 
+</ui:composition>

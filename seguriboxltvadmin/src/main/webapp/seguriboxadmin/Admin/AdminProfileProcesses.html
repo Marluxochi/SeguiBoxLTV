@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SeguriBox LTV</title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../../css/animate.css">
+        <link rel="stylesheet" href="../../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../css/jquery-ui.min.css">
+        <link rel="stylesheet" href="../../css/style.css">
+        <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../js/App.js"></script>
+        <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <a href="../Default.html" target="_top"><img class="logo" src="../../img/LogoMBN.png" alt="logo"></a>
+            <div class="slogan"><i>La Información es Poder.   Knowledge is power.</i></div>
+        </div>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Gestión de Documentos <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AdminDocuments.html"><span class="glyphicon glyphicon-duplicate"></span> Administración de Documentos</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reportes <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../Reports/UsersInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Usuarios</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/AdminInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Administradores</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/DocsInPlatform.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documentos</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/DocsInStandar.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documento por Estándar de firma</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/SignaturesByDoc.html"><span class="glyphicon glyphicon-stats"></span> Reporte Firmas por documento</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/DocsToExpire.html"><span class="glyphicon glyphicon-stats"></span> Reporte Documentos por vencer</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Reports/CertToExpire.html"><span class="glyphicon glyphicon-stats"></span> Reporte Certificados por vencer</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Monitoreo <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../Monitoring/UserLog.html"><span class="glyphicon glyphicon-record"></span> Log de acceso al portal</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../Monitoring/AuditTrial.html"><span class="glyphicon glyphicon-record"></span> Log de auditoria</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Herramientas <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu">
+                                        <a><span class="glyphicon glyphicon-home"></span> Seguridad</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminAreas.html"><span class="glyphicon glyphicon-th-list"></span> Areas de trabajo</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminGroups.html"><span class="glyphicon glyphicon-th"></span> Grupos</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminUsers.html"><span class="glyphicon glyphicon-user"></span> Usuarios</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminProfileProcesses.html"><span class="glyphicon glyphicon-list-alt"></span> Perfil de procesos</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminHSMKeys.html"><span class="glyphicon glyphicon-wrench"></span> Llaves HSM</a></li>
+                                        </ul>
+                                    </li>                                    
+                                    <li class="divider"></li>
+                                    <li class="dropdown dropdown-submenu">
+                                        <a><span class="glyphicon glyphicon-lock"></span> Politicas algoritmos</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="AdminAsimetricAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Asimétrico</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminHashAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Hash</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminAlgorithms.html"><span class="glyphicon glyphicon-lock"></span> Firma</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AdminLibraryAlgorithms.html"><span class="glyphicon glyphicon-book"></span> Cargar librería</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="AlgorithmsHistory.html"><span class="glyphicon glyphicon-record"></span> Historial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="../SystemSettings.html"><span class="glyphicon glyphicon-cog"></span> Configuración del Sistema</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="dropdown pull-right">
+                            <button class="glyphicon glyphicon-user btn dropdown-toggle " style="background-color:#eeeef2;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                German Hernandez Lopez
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                                <li><a href="##" class=""> &nbsp; Usuario: ghernandez &nbsp; </a></li>
+                                <li><a href="##">&nbsp; Nombre: German Hernandez Lopez</a></li>
+                                <li><a href="../SignInk.html"> <span class="glyphicon glyphicon-off">&nbsp;Salir</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="mainContent">
+            <div class="container-fluid " style="margin-top:30px">
+                <div class="row">
+                    <div class="col-md-12 visible-md visible-lg visible-sm">
+                        <div class="pull-right">
+                            <button onclick="location.href = 'AdminProfileProcess.html'" type="button" class="btn btn-primary">Agregar perfil de proceso</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 visible-xs">
+                        <div class="pull-right">
+                            <button onclick="location.href = 'AdminProfileProcess.html'" type="button" class="btn btn-primary">Agregar perfil de proceso</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="margin-top:30px">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h3><strong>Perfiles de proceso</strong></h3>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Fecha inicial" id="datepicker2">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Fecha final" name="" id="datepicker">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Nombre del perfil" name="">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Nombre</th>
+                                                <th>Fecha de registro</th>
+                                                <th>Tipo perfil</th>
+                                                <th>Editar</th>
+                                                <th>Copiar</th>
+                                                <th>Renombrar</th>
+                                                <th>Eliminar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Contratos</td>
+                                                <td>2016-01-12</td>
+                                                <td>Pre configurado</td>
+                                                <td><a href="EditProfileProcess.html"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-remove "></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>005</td>
+                                                <td>Reportes</td>
+                                                <td>2016-01-15</td>
+                                                <td>Pre configurado</td>
+                                                <td><a href="EditProfileProcess.html"><span class="glyphicon glyphicon-pencil "></a></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-remove "></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>027</td>
+                                                <td>Contratos 2</td>
+                                                <td>2016-02-03</td>
+                                                <td>Personalizado</td>
+                                                <td><a href="EditProfileProcess.html"><span class="glyphicon glyphicon-pencil "></a></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove "></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>028</td>
+                                                <td>Mis reportes</td>
+                                                <td>2016-02-03</td>
+                                                <td>Personalizado</td>
+                                                <td><a href="EditProfileProcess.html"><span class="glyphicon glyphicon-pencil "></a></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-remove "></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>   
+                </div>
+            </div>
+            <div class="container-fluid" style="margin-top:30px">
+                <div class="row">
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header  text-center">
+                                    <h4 class="modal-title" id="myModalLabel">A V I S O</h4>
+                                </div>
+                                <div class="modal-body">
+                                    El perfil <strong>Contratos 2</strong> va a ser eliminado!
+                                </div>
+                                <div class="modal-footer">
+                                    <a type="button" class="btn btn-default" href="AdminProfileProcesses.html">Cerrar</a>
+                                    <a type="button" class="btn btn-primary" href="AdminProfileProcesses.html">Aceptar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header  text-center">
+                                    <h4 class="modal-title" id="myModalLabel">A V I S O</h4>
+                                </div>
+                                <div class="modal-body">
+                                    El perfil <strong>Mis reportes</strong> va a ser eliminado!
+                                </div>
+                                <div class="modal-footer">
+                                    <a type="button" class="btn btn-default" href="AdminProfileProcesses.html">Cerrar</a>
+                                    <a type="button" class="btn btn-primary" href="AdminProfileProcesses.html">Aceptar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<ui:composition  template = "../../templates/mastertemplate.xhtml" 
+                 xmlns = "http://www.w3.org/1999/xhtml" 
+                 xmlns:b="http://bootsfaces.net/ui"
+                 xmlns:f = "http://java.sun.com/jsf/core" 
+                 xmlns:h = "http://java.sun.com/jsf/html" 
+                 xmlns:ui = "http://java.sun.com/jsf/facelets" 
+                 xmlns:p="http://xmlns.jcp.org/jsf/passthrough"> 
+    <ui:define  name = "title" > Seguribox LTV </ui:define> 
+    <ui:define  name = "content" > 
+        <h:body>
+            <div id="mainContent">
+                <div class="container-fluid" style="margin-top: 94px;">
+                    <div class="row">
+                        <div class="col-md-3" />
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h3><strong>Editar políticas de algoritmo</strong></h3></div>
+                                <div class="panel-body">
+                                    <b:messages/>
+                                    <h:form styleClass="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="control-label col-md-5" for="text">Nombre del algoritmo:</label>
+                                            <div class="col-md-7">
+                                                <h:inputText p:placeholder="SHA-512" id="sha" styleClass="form-control" value="#{algorithmHashBean.algortihmHash.algorithmName}"/>
+                                                <!-- <input disabled="disabled" type="text" class="form-control" id="usr" placeholder="SHA-512" /> -->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-5" for="text">Descripción del algoritmo:</label>
+                                            <div class="col-md-7">
+                                                <h:inputTextarea rows="3" styleClass="form-control"  p:placeholder="Agregar descripción" value="#{algorithmHashBean.algortihmHash.algorithmDescription}"/> 
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-5" for="text">OID:</label>
+                                            <div class="col-md-7">
+                                                <h:inputText p:placeholder="2.16.840.1.101.3.4.2.3" id="oid" styleClass="form-control" value="#{algorithmHashBean.algortihmHash.oid}" readonly="true"/>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-5" for="text">Bin OID:</label>
+                                            <div class="col-md-7">
+                                                <h:inputText p:placeholder="60 86 48 01 65 03 04 02 03" id="binoid" styleClass="form-control" value="#{algorithmHashBean.algortihmHash.binOid}" readonly="true"/>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-5" for="text">Tamaño:</label>
+                                            <div class="col-md-2">
+                                                <h:inputText p:placeholder="512" id="tamaño" styleClass="form-control" value="#{algorithmHashBean.algortihmHash.bytes}" readonly="true"/>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-5" for="text">Activo: </label>
+                                            <div class="col-md-5" />
+                                            <div class="col-md-5">
+                                                <h:selectBooleanCheckbox value="#{algorithmHashBean.algortihmHash.active}" converter="javax.faces.Boolean"/> Activo
+
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8" />
+                                            <div class="col-md-4">
+                                                <div class="btn-group pull-right">
+                                                    <h:button value="Cancelar" class="btn btn-primary" outcome="adminHashAlgorithms"></h:button>
+                                                    <h:commandButton value="Finalizar" class="btn btn-primary" action="#{algorithmHashBean.update()}"></h:commandButton>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h:form>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </h:body>
+    </ui:define> 
+</ui:composition>
